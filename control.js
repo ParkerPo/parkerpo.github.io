@@ -12,16 +12,17 @@ $(function() {
 $(".btn").click(function(){
 	name = $(this).text()
 	ans = prompt(name+"說:")
+	
 	newone = true
-	$("li").each(function(){
+	$("td").each(function(){
 			if ($(this).text() == ans){
 				alert("出現過了!!")
 				newone = false;
 			}
 		})
-	if (newone){
+	if (newone && ans != null){
 
-		$("#wordlist").append($("<li>").text(ans).addClass("list-group-item"))
+		$("tbody").append( $("<tr>").append($("<th>").append(name)).append($("<td>").append(ans)))
 		$("#"+this.id+"score").text(parseInt($("#"+this.id+"score").text())+1)
 	}
 })
