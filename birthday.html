@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Hello, world!</title>
+    <title>黒P波斯Day</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,12 +10,144 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Hello, world!</h1>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="birthday.js"></script>
+
+  <div class="container">
+    <div class="jumbotron" id="start_div">
+      <h1 class="display-3">Happy Birthday!</h1>
+      <p class="lead">雖然生日到了，但必須先完成一些任務才能獲得獎勵</p>
+      
+       <hr class="my-4">
+      <button type="button" class="btn btn-primary" id="start_btn">開始</button>
+    </div>
+
+    <div class="jumbotron question" id="quiz1_div">
+      <h3 class="display-5">基本題</h3>
+      <p class="lead">紀念日是哪一天呢~</p>
+      <div class="row">
+        <div class="col-3 wrong">
+          2/26
+        </div>
+        <div class="col-3 ans">
+          2/27
+        </div>
+        <div class="col-3 wrong">
+          2/28
+        </div>
+        <div class="col-3 wrong">
+          3/1
+        </div>
+      </div>
+
+    </div>
+    <div class="jumbotron question" id="quiz2_div">
+      <h3 class="display-5">回憶題</h3>
+      <p class="lead">我們第一部一起看的電影是</p>
+      <div class="row">
+        <div class="col-6 ans">
+          動物方程式
+        </div>
+        <div class="col-6 wrong">
+          自殺突擊隊
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-6 wrong">
+          敦克爾克
+        </div>
+        <div class="col-6 wrong">
+          樂高蝙蝠俠
+        </div>
+      </div>
+
+    </div>
+    <div class="jumbotron question" id="quiz3_div">
+      <h3 class="display-5">考古題</h3>
+      <p class="lead">台新在2012年的主題歌，出現最多的單字</p>
+      <div class="row">
+        <div class="col-3 wrong">
+          bank
+        </div>
+        <div class="col-3 wrong">
+          safe
+        </div>
+        <div class="col-3 wrong">
+          energy
+        </div>
+        <div class="col-3 ans">
+          day
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron question" id="quiz4_div">
+      <h3 class="display-5">記憶題</h3>
+      <p class="lead">在香港住的飯店叫</p>
+      <div class="row">
+        <div class="col-6 wrong">
+          尖沙咀金城酒店
+        </div>
+        <div class="col-6 ans">
+          尖沙咀皇悅酒店
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-6 wrong">
+          香港九龍酒店
+        </div>
+        <div class="col-6 wrong">
+          尖沙咀寶軒酒店
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron question" id="quiz4_div">
+      <h3 class="display-5">聊天題</h3>
+      <p class="lead">下列哪個時段在facebook messemger聊天記錄最多</p>
+      <div class="row">
+        <div class="col-3 ans">
+          16:00
+        </div>
+        <div class="col-3 wrong">
+          11:00
+        </div>
+        <div class="col-3 wrong">
+          08:00
+        </div>
+        <div class="col-3 wrong">
+          11:00
+        </div>
+      </div>
+    </div>
+    <!-- <div class="jumbotron question" id="quiz4_div">
+      <h3 class="display-5">聊天題</h3>
+      <p class="lead">下列哪個時段在facebook messemger聊天記錄最多</p>
+      <div class="row">
+        <div class="col-3 ans">
+          16:00
+        </div>
+        <div class="col-3 wrong">
+          11:00
+        </div>
+        <div class="col-3 wrong">
+          08:00
+        </div>
+        <div class="col-3 wrong">
+          11:00
+        </div>
+      </div>
+    </div> -->
+    <div class="jumbotron" id="finish">
+      <h3 class="display-5">恭喜完成考驗！</h3>
+      <div class="row">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/X6U0p6iviNQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
   </body>
 </html>
